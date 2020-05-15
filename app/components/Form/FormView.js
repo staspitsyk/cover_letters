@@ -33,7 +33,7 @@ export class FormView {
 
     getFuncQuestion() {
         if (this.funcQuestion.value) {
-            return `What functionality does your ${this.funcQuestion.value}?`;
+            return `What functionality does your ${this.funcQuestion.value} have?`;
         } else {
             return '';
         }

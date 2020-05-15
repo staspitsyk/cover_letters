@@ -13,4 +13,5 @@ export class LetterController {
         data = this.model.prepareData(data)
         this.view.renderLetter(data);
     }
+
 }

@@ -17,3 +17,7 @@
 .btn-copy {
     margin-left: 60%;
 }
+
+.bid-body {
+    border: 1px solid red;
+}

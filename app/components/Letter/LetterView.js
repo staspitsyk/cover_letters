@@ -18,7 +18,7 @@ export class LetterView {
   renderLetterContainerContent() {
     this.letterContainer.innerHTML = '';
     const coppyBtn = document.createElement('button');
-    coppyBtn.classList.add('btn', 'btn-primary');
+    coppyBtn.classList.add('btn', 'btn-primary', 'btn-copy');
     coppyBtn.innerHTML = 'Copy';
     coppyBtn.addEventListener('click', this.copyToClipboard);
     this.renderLetterPre();

@@ -1,5 +1,5 @@
 export class FormView {
-    constructor(handleSubmit) {
+    constructor(handleSubmit, handleAddExample) {
         this.form = document.forms['form-utor'];
         this.appeal = this.form["appeal"];
         this.body = this.form["body"];
@@ -11,6 +11,9 @@ export class FormView {
         this.uniqQuastion2 = this.form["uniqQuastion2"];
         this.startQuestion = this.form["startQuestion"];
 
+        this.addAndEditBtns = document.querySelectorAll('.add-and-edit');
+
+        this.addAndEditBtns.forEach(btn => btn.addEventListener('click', () => handleAddExample(btn.dataset.id)));
         this.submitButton = document.querySelector('#submit');
         this.submitButton.addEventListener('click', handleSubmit);
     }

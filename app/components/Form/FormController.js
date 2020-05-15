@@ -1,8 +1,10 @@
 import { FormView } from "./FormView.js";
+import { FormModel } from "./FormModel.js";
 
 export class FormController {
     constructor({ notify }) {
-        this.view = new FormView(this.handleSubmit.bind(this));
+        this.view = new FormView(this.handleSubmit.bind(this), this.handleAddExample.bind(this));
+        this.model = new FormModel();
         this.notify = notify;
     }
 
@@ -24,5 +26,11 @@ export class FormController {
         }
 
         this.notify("generate-letter", data);
+    }
+
+    handleAddExample(id) {
+        const data = this.model.getData()
+        const text = data.find(example => example.id === +id).bid;
+        this.view.body.value = text;
     }
 }

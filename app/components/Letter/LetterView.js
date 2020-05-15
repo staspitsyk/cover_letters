@@ -7,7 +7,6 @@ export class LetterView {
 
   copyToClipboard() {
     const el = document.createElement('textarea');
-    console.log(this.letter);
     el.value = this.letter.innerHTML;
     document.body.appendChild(el);
     el.select();

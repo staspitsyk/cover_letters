@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Cover Letters</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="row">
+            <div class="col-lg-12 header">
+                <h1 class="header__title">Cover Letters</h1>
+            </div>
+        </header>
+        <section>
+            <div class="row justify-content-lg-center">
+                <div class="col-lg-6 form">
+                    <form name="form-utor">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Appeal</label>
+                            <input type="text" name="appeal" class="form-control" id="appeal" placeholder="John">
+                        </div>
+                        <p>
+                            <a class="btn btn-primary" data-toggle="collapse" href="#bidExample1" role="button"
+                                aria-expanded="false" aria-controls="bidExample1">First bid example</a>
+                            <a class="btn btn-primary" data-toggle="collapse" href="#bidExample2" role="button"
+                                aria-expanded="false" aria-controls="bidExample2">Second bid example</a>
+                            <a class="btn btn-primary" data-toggle="collapse" href="#bidExample3" role="button"
+                                aria-expanded="false" aria-controls="bidExample3">Third bid example</a>
+
+                        </p>
+                        <div class="row">
+                            <div class="col">
+                                <div class="collapse multi-collapse" id="bidExample1">
+                                    <div class="card card-body">
+                                        We have senior-level QA Engineers in our team who could provide testing for your
+                                        mobile app.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="collapse multi-collapse" id="bidExample2">
+                                    <div class="card card-body">
+                                        Thanks for sharing the link. We have senior-level QA Engineers in our team who
+                                        match your requirements and could provide automated testing for your website.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="collapse multi-collapse" id="bidExample3">
+                                    <div class="card card-body">
+                                        We have experienced QA Engineers in our team who could provide tests for your
+                                        project.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1"><b>Body of the bid</b></label>
+                            <textarea class="form-control" name="body" id="exampleFormControlTextarea1" rows="3"
+                                placeholder="Fill the body of the bid. You can find examples if needed, by clicking on buttons from above."></textarea>
+                        </div>
+                        <div class="link-question">
+                            <p>Could you share the link to your</p>
+                            <div class="form-group">
+                                <input type="text" name="linkQuestion" class="form-control link-question__input"
+                                    id="linkQuestion" placeholder="App">
+                            </div>
+                            <p class="link-question__question">?</p>
+                        </div>
+                        <div class="link-question">
+                            <p>What functionality does your</p>
+                            <div class="form-group">
+                                <input type="text" name="funcQuestion" class="form-control link-question__input"
+                                    id="funcQuestion" placeholder="App">
+                            </div>
+                            <p class="link-question__question">?</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="question">General questions</label>
+                            <select name="genQuestion1" class="form-control" id="exampleFormControlSelect1">
+                                <option selected="true" disabled="disabled" value="">Add if needed</option>
+                                <option value="What are your expectations from testing?">What are your expectations from
+                                    testing?</option>
+                                <option
+                                    value="Could you provide more information about the product we are going to work on?">
+                                    Could you provide more information about the product we are going to work on?
+                                </option>
+                                <option value="What is your stage?">What is your stage?</option>
+                                <option value="Have you done any QA testing for your project before?">Have you done any
+                                    QA testing for your project before?</option>
+                                <option value="What are your expectations from automatization?">What are your
+                                    expectations from automatization?</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="question">General questions</label>
+                            <select name="genQuestion2" class="form-control" id="exampleFormControlSelect1">
+                                <option selected="true" disabled="disabled" value="">Add if needed</option>
+                                <option value="What are your expectations from testing?">What are your expectations from
+                                    testing?</option>
+                                <option
+                                    value="Could you provide more information about the product we are going to work on?">
+                                    Could you provide more information about the product we are going to work on?
+                                </option>
+                                <option value="What is your stage?">What is your stage?</option>
+                                <option value="Have you done any QA testing for your project before?">Have you done any
+                                    QA testing for your project before?</option>
+                                <option value="What are your expectations from automatization?">What are your
+                                    expectations from automatization?</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Add unique question if nedded</label>
+                            <input name="uniqQuastion1" type="text" class="form-control"
+                                placeholder="Some unique question">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Add unique question if nedded</label>
+                            <input name="uniqQuastion2" type="text" class="form-control"
+                                placeholder="Some unique question">
+                        </div>
+                        <div class="form-group form-check">
+                            <input name="startQuestion" type="checkbox" class="form-check-input" id="startQuestion">
+                            <label class="form-check-label" for="startQuestion">Add "When would you like to
+                                start?"</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+                    </form>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-lg-3"></div>
+                <pre class="letter col-lg-9 align-self-center">
+                </pre>
+
+            </div>
+        </section>
+    </div>
+    <script src="./app/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="./app/bootstrap.min.js"></script>
+    <script src="./app/main.js" type="module"></script>
+</body>
+
+</html>

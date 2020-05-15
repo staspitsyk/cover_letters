@@ -1,0 +1,16 @@
+.header__title {
+    text-align: center;
+}
+
+.link-question {
+    display: flex;
+}
+
+.link-question__input {
+    margin-left: 10px;
+}
+
+.link-question__question {
+    margin-left: 20px;
+}
+
